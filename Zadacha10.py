@@ -2,3 +2,15 @@
 # а некоторые – гербом. Определите минимальное число монеток, которые нужно перевернуть, 
 # чтобы все монетки были повернуты вверх одной и той же стороной. 
 # Выведите минимальное количество монет, которые нужно перевернуть
+n=int(input ("Введите количество монеток"))
+coins=list()
+i=0
+while i<n:
+   coins.append(random.randrange(2))
+   i+=1
+HowMany0=coins.count(0)
+HowMany1=coins.count(1)
+if HowMany0<HowMany1:
+    print(HowMany0)
+else:
+    print(HowMany1)
